@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const a = Number(prompt("Enter A"));
+        const b = Number(prompt("Enter B"));
+        const c = Number(prompt("Enter C"));
+        function solveQE(a, b, c) {
+            const d = b * b - 4 * a * c;
+            if (d < 0) {
+                document.write('This quadratic equation doesn\'t have a solution')
+            } else {
+                const xOne = (-b + Math.sqrt(d)) / 2 * a;
+                const xTwo = (-b - Math.sqrt(d)) / 2 * a;
+                document.write('x1=' + xOne + ', x2=' + xTwo);
+            }
+        }
+        solveQE(a, b, c)
+    </script>
+</body>
+</html>
